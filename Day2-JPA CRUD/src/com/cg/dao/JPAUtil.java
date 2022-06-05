@@ -3,12 +3,13 @@ package com.cg.dao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.metamodel.Type.PersistenceType;
 public class JPAUtil {
 private static EntityManagerFactory factory;
 private static EntityManager entityManager;
 static
 {
-	factory=Persistance.createEntityManagerFactory("JPA-PU");
+	factory=Persistence.createEntityManagerFactory("JPA-PU");
 }
 public static EntityManager getEntityManager()
 {
