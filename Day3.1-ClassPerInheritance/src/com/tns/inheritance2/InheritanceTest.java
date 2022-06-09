@@ -8,7 +8,7 @@ public class InheritanceTest {
 
 	public static void main(String[] args) {
 		EntityManagerFactory factory=Persistence.createEntityManagerFactory("JPA-PU");
-		EntityManager en=factory.createEntityManager();
+		EntityManager en=factory.createEntityManager(); 
 		en.getTransaction().begin();
 		
 		Employee emp=new Employee();
